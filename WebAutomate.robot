@@ -105,6 +105,7 @@ Error User
     Enter the UserName & Password    ${User4}    ${Password}
     Click on Login Button
     Sleep    2s    
+    Page Should Contain    Rock
 
 Visual User
     [Tags]    Regression    low
