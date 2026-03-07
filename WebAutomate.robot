@@ -98,16 +98,18 @@ Problem User
     [Tags]    Sanity    High
     Enter the UserName & Password    ${User3}    ${Password}
     Click on Login Button
-    Sleep    5s
+    Sleep    2s
 
 Error User
     [Tags]    Regression    low
     Enter the UserName & Password    ${User4}    ${Password}
     Click on Login Button
-    Sleep    5s    
+    Sleep    2s    
 
 Visual User
     [Tags]    Regression    low
     Enter the UserName & Password    ${User5}    ${Password}
     Click on Login Button
-    Sleep    5s  
+    Capture Page Screenshot    
+    Sleep    2s  
+    Page Should Contain    John
