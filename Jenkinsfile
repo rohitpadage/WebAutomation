@@ -4,7 +4,7 @@ pipeline{
     agent any
 
     environment{
-        ${Results_Dir}= "Results"
+        Results_Dir= "Results"
     }
 
     parameters{
